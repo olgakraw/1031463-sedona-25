@@ -33,9 +33,36 @@
     <section class="hotel-search">
        <h4 class="visually-hidden">ПОИСК ГОСТИНИЦ В СЕДОНЕ</h4>
        <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
-      <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     
-      <a a class="" href="hotel-search.html">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
+       <button class="modal-close" type="button">
+        ПОИСК ГОСТИНИЦ В СЕДОНЕ
+       </button>
+        <form class="hotel-search form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label> ДАТА ЗАЕЗДА
+            <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+            <button type="button"><img src="img/calendar.svg" alt="календарь"> </button>
+          </label>
+        </p>
+        <p>
+          <label>ДАТА ВЫЕЗДА
+            <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
+            <button type="button"><img src="img/calendar.svg" alt="календарь"> </button>
+           </label>
+        </p>
+        <p>
+          <label>ВЗРОСЛЫЕ 
+            <input type="number" name="adults-number" value="2" min="0">
+          </label>
+        </p>  
+        <p>
+          <label>ДЕТИ 
+            <input type="number" name="children-number" value="0" min="0">
+          </label>
+        </p>
+          <button class="button" type="submit">НАЙТИ</button>
+        </form>
       
     </section>
   </main> 
