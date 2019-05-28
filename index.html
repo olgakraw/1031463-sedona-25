@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -27,18 +30,17 @@
     <section class="city-description">
       СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
     </section>
-    <section class="reasons to visit">
+    <section class="reasons-to-visit">
       <h3>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</h3>
     </section>
     <section class="hotel-search">
-       <h4 class="visually-hidden">ПОИСК ГОСТИНИЦ В СЕДОНЕ</h4>
-       <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
-       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+       <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h4>
+       <p class="hotel-search-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     
-       <button class="modal-close" type="button">
+       <button class="button button-hotels-search" type="button">
         ПОИСК ГОСТИНИЦ В СЕДОНЕ
        </button>
-        <form class="hotel-search form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label> ДАТА ЗАЕЗДА
             <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
@@ -61,7 +63,7 @@
             <input type="number" name="children-number" value="0" min="0">
           </label>
         </p>
-          <button class="button" type="submit">НАЙТИ</button>
+          <button class="button button-search" type="submit">НАЙТИ</button>
         </form>
       
     </section>
