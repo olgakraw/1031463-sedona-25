@@ -82,7 +82,7 @@ a {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-item {
   color: #000000;
 }
 
@@ -92,12 +92,12 @@ a {
     font-size: 21px;
     line-height: 26px;
 }
-.reasons-to-visit h3 {
+.reasons-to-visit-header {
     text-align: center;
     font-weight: 400;
     color: #333333;
 }
-.hotel-search h3 {
+.hotel-search-header {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -108,15 +108,15 @@ a {
     font-weight: 400;
     color: #333333;
 }
-.hotel-search-form input {
+.form-input {
     font: inherit;
     background-color: #f2f2f2;
     background-color: #f2f2f2;
 }
-.hotel-search-form input:hover {
+.form-input:hover {
     background-color: #ebebeb;
 }
-.hotel-search-form input:focus {
+.form-input:focus {
     border: solid 2px #e5e5e5;
     background-color: #ffffff;
 }
@@ -124,12 +124,9 @@ a {
     background-color: #f2f2f2;
 }
 
-.main-footer a {
-    text-decoration: none;
-    color: #000000;
-  
-}
 .hashtag {
+    text-decoration: none;
+    color: #000000; 
     font-size: 21px;
     text-align: center;
 }
@@ -155,14 +152,14 @@ a {
     text-align: center;
 }
 
-.footer-copyright a{
+.htmlacademy-logo{
     color: #231f20
 }
-.footer-copyright a:hover{
+.htmlacademy-logo:hover{
     color: #81b3d2;
     
 }
-.footer-copyright a:focus {
+.htmlacademy-logo:focus {
     color: #bdbbbc;
   
 }
