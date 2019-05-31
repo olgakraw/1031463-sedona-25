@@ -14,10 +14,10 @@
         <img src="" width="150" height="150" alt="Site of Sedona">
       </a>
       <ul class="site-navigation list-reset">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="photos.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li><a class="site-navigation-item" href="info.html">Информация</a></li>
+        <li><a class="site-navigation-item" href="photos.html">Фото и видео</a></li>
+        <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
+        <li><a class="site-navigation-item" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -31,10 +31,10 @@
       СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
     </section>
     <section class="reasons-to-visit">
-      <h3>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</h3>
+      <h3 class="reasons-to-visit-header">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</h3>
     </section>
     <section class="hotel-search">
-       <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+       <h3 class="hotel-search-header">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
        <p class="hotel-search-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     
        <button class="button button-hotels-search" type="button">
@@ -43,24 +43,24 @@
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label> ДАТА ЗАЕЗДА
-            <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+            <input class="form-input" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
             <button type="button"><img src="img/calendar.svg" alt="календарь"> </button>
           </label>
         </p>
         <p>
           <label>ДАТА ВЫЕЗДА
-            <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
+            <input class="form-input" type="text" name="departure-date" value="" placeholder="4 июля 2017">
             <button type="button"><img src="img/calendar.svg" alt="календарь"> </button>
            </label>
         </p>
         <p>
           <label>ВЗРОСЛЫЕ 
-            <input type="number" name="adults-number" value="2" min="0">
+            <input class="form-input" type="number" name="adults-number" value="2" min="0">
           </label>
         </p>  
         <p>
           <label>ДЕТИ 
-            <input type="number" name="children-number" value="0" min="0">
+            <input class="form-input" type="number" name="children-number" value="0" min="0">
           </label>
         </p>
           <button class="button button-search" type="submit">НАЙТИ</button>
