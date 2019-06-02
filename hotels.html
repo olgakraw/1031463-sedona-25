@@ -9,62 +9,94 @@
   </head>
   <body>
     <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
-        <img src="" width="150" height="150" alt="Site of Sedona">
+        <img src="img/logo-sedona.png" width="140" height="71" alt="Site of Sedona">
       </a>
-      <ul class="site-navigation list-reset">
-            <li><a class="site-navigation-item" href="info.html">Информация</a></li>
-            <li><a class="site-navigation-item" href="photos.html">Фото и видео</a></li>
-            <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
-            <li><a class="site-navigation-item" href="hotels.html">Гостиницы</a></li>
-      </ul>
+        <ul class="site-navigation list-reset site-navigation-left">
+          <li><a class="site-navigation-item" href="info.html">Информация</a></li>
+          <li><a class="site-navigation-item" href="photos.html">Фото и видео</a></li>
+        </ul>
+        <ul class="site-navigation list-reset site-navigation-right">
+          <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
+          <li><a class="site-navigation-item" href="hotels.html">Гостиницы</a></li>
+        </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Гостиницы</h1>
     <section class="hotels">
-        <ul class="hotels-list">
+        <ul class="hotels-list list-reset">
+            
             <li class="hotels-list-item">
+                <div class="hotels-list-item-wrapper">
+              <div class="hotels-list-name">
                 <h2>AMARA RESORT & SPA</h2>
-                <p>
-                    <img src="img/hotel-amarama.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
-                </p>
+             
                 <b>ГОСТИНИЦА</b>
                 <b>ОТ 4000 Р.</b>
                 <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
-                <a class="button button-book" href="#">ЗАБРОНИРОВАТЬ</a>
+                <a class="button button-book" href="#">ЗАБРОНИРОВАТЬ</a> 
+              </div> 
+                <div class="hotels-list-picture">
+                <p>
+
+                    <img src="img/hotel-amarama.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+                </p>
+                </div>
+                <div class="hotels-list-raiting">
                 <b>РЕЙТИНГ: 8,5</b>
+                </div>
+              </div>
             </li>
+            
             <li class="hotels-list-item">
+                <div class="hotels-list-item-wrapper">
+                    <div class="hotels-list-name">
                     <h2>DESERT QUAIL INN</h2>
-                    <p>
-                        <img src="img/hotel-desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
-                    </p>
                     <b>МОТЕЛЬ</b>
                     <b>ОТ 3000 Р.</b>
                     <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
                     <a class="button button-book" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
+                <div class="hotels-list-picture">
+                    <p>
+                        <img src="img/hotel-desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+                    </p>
+                  </div>
+                  <div class="hotels-list-raiting"> 
                     <b>РЕЙТИНГ: 8,9</b>
+                  </div>
+                  </div>
             </li>
             <li class="hotels-list-item">
+                <div class="hotels-list-item-wrapper">
+                  <div class="hotels-list-name">
                     <h2>VILLAS AT POCO DIABLO</h2>
-                    <p>
-                        <img src="img/hotel-villas.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
-                    </p>
                     <b>АПАРТАМЕНТЫ</b>
                     <b>ОТ 2000 Р.</b>
                     <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
                     <a class="button button-book" href="#">ЗАБРОНИРОВАТЬ</a>
+                  </div> 
+                  <div class="hotels-list-picture">
+                    <p>
+                        <img src="img/hotel-villas.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+                    </p>
+                  </div>
+                  <div class="hotels-list-raiting">
                     <b>РЕЙТИНГ: 9,2</b>
+                  </div>  
+                </div>  
             </li>
+            
         </ul>
     </section>
   </main> 
   <footer class="main-footer">
-    <div>
+     <div class=container>
+       <div>
       <a class="hashtag" href="#">#VISITSEDONA</a>
-    </div>
+       </div>
     <div class="footer-social">
      <ul class="list-reset">
       <li><a class="social-button" href="#">Twitter</a></li>
@@ -78,7 +110,7 @@
         <img src="" width="100" height="90" alt="html-academy">  
       </a>
     </p> 
-
+    </div>
   </footer>  
   </body>
 </html>
