@@ -9,15 +9,21 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
-    background-image: url("../img/background-photo.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
+    
+   
 }
  
 a {
     text-decoration: none;
 }
- 
+
+.index-picture {
+    background-image: url("../img/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+   
+}
+
 .button {
     font: inherit;
     text-align: center;
@@ -177,18 +183,22 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
 }
 
+/*
 .main-header {
-    margin-bottom: 61px;
+    
     margin-left: 40px;
     margin-right: 40px;
+    height: 56px;
 }
+*/
 .main-navigation {
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
+    margin-bottom: 76px;
+   
 }
 .container {
     display: flex;
@@ -196,15 +206,17 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
 
 .site-navigation-left {
     order: -1;
+  
 }
 .site-navigation-right {
     order: 1;
+    
 }
 
 .site-navigation {
-    width: 478px;
-    padding: 0;
+    padding: 0 72px;
 }
+
 
 .greeting {
     width: 459px; 
@@ -219,10 +231,11 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
 }
 
 .hotel-search {
-    width: 568px; 
+     
     margin: 0 auto;
     padding: 0 316px;
     list-style: none;
+    background-color: #ffffff;
 }
 
 .main-footer {
@@ -243,15 +256,22 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
     margin: 0;
 }
 
-.hotels-list {
+.hotels-list-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 31px;    
+    margin: 0;
+    margin-bottom: 31px; 
+  
+    width: 1200px;
 }
 
 .hotels-list-item-wrapper {
     display: flex;    
+
+    
+    
+    
 }
 
 .hotels-list-picture {
@@ -260,5 +280,10 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
 }
 
 .hotels-list-raiting {
-    margin-right: 31px;
+    margin-left: 261px;
+   
+}
+.hotels-list-name {
+   
+    margin-right: 261px;
 }
