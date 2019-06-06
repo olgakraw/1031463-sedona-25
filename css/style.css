@@ -159,7 +159,7 @@ a {
 }
 
 .htmlacademy-logo{
-    color: #231f20
+    color: #231f20;
 }
 .htmlacademy-logo:hover{
     color: #81b3d2;
@@ -204,12 +204,30 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
     display: flex;
 }
 
+
+
+
 .site-navigation-left {
     order: -1;
+    display: flex;
   
+    justify-content: space-between;
+    width: 478px;
+    margin: auto;
+    padding: 0;
+    
+    
 }
 .site-navigation-right {
     order: 1;
+    display: flex;
+  
+    justify-content: space-between;
+    width: 478px;
+    margin: auto;
+    padding: 0;
+    
+
     
 }
 
@@ -256,20 +274,33 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
     margin: 0;
 }
 
+.social-button-wrapper {
+    display: flex;
+  
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+    padding: 0;
+}
+
 .hotels-list-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-content: space-between;
     margin: 0;
+    padding: 0;
     margin-bottom: 31px; 
   
     width: 1200px;
+    
 }
 
 .hotels-list-item-wrapper {
     display: flex;    
-
+    justify-content: space-around;
+ 
     
+ 
     
     
 }
@@ -280,10 +311,10 @@ body > * > * > * {background: rgba(0, 255, 255, 0.3);
 }
 
 .hotels-list-raiting {
-    margin-left: 261px;
+    margin-left: 200px;
    
 }
 .hotels-list-name {
    
-    margin-right: 261px;
+    margin-right: 400px;
 }
