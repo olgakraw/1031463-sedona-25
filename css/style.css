@@ -45,6 +45,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/background-photo.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+    
    
 }
 
@@ -463,6 +464,11 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
+.main-header-index {
+    
+ 
+    margin-bottom: -56px;
+}
 
 .main-header-wrapper {
     width: 1200px;
@@ -515,6 +521,7 @@ input[type="radio"].visually-hidden {
     width: 459px; 
     margin: 0 auto;
     padding: 0;
+    padding-top: 132px;
     list-style: none;
     
 }
