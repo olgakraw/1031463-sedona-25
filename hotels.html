@@ -8,7 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <div class="content">
+    <header class="main-header main-header-hotels">
         <div class="main-header-wrapper">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo-sedona.png" width="140" height="71" alt="Site of Sedona">
@@ -16,24 +17,102 @@
             
          <nav class="main-navigation container">
             
-          <div class="left">
-          <ul class="site-navigation list-reset site-navigation-left">
-            <li><a class="site-navigation-item" href="info.html">Информация</a></li>
-            <li><a class="site-navigation-item" href="photos.html">Фото и видео</a></li>
+          <ul class="site-navigation list-reset ">
+            <li><div class="site-navigation-item site-navigation-left"> <a class="item site-item-left"  href="info.html">Информация</a></div></li>
+            <li><div class="site-navigation-item site-navigation-left"> <a class="item site-item-left" href="photos.html">Фото и видео</a></div></li>
+            <li><div class="site-navigation-item site-navigation-right"><a class="item site-item-right" href="map.html">Карта штата</a></div></li>
+            <li><div class="site-navigation-item site-navigation-right"><a class="item site-item-right site-navigation-item-current" href="hotels.html">Гостиницы</a></div></li>
           </ul>
-          </div>>
-          <div class="right">
-          <ul class="site-navigation list-reset site-navigation-right">
-            <li><a class="site-navigation-item" href="map.html">Карта штата</a></li>
-            <li><a class="site-navigation-item site-navigation-item-current">Гостиницы</a></li>
-          </ul>
-          </div>
          
          </nav>
         </div>
   </header>
-  <main class="container">
-      <!--<div class=hotels-list-wrapper>-->
+  <main>
+    
+    <div class="filter-wrapper"> 
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <div class="filter-items">
+          <div class="filter-infrustructure filters">
+         
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul class="list-reset">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                    <label for="filter-wi-fi">WI-FI</label>
+                  </li>
+                  </ul>
+                 </fieldset> 
+                </div> 
+                <div class="filter-housing filters">
+                 <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul class="list-reset">
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                        <label for="filter-hotel">Гостиница</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                        <label for="filter-motel">Мотель</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+                        <label for="filter-apartment">Апартаменты</label>
+                      </li>
+                    </ul>
+                  </fieldset>  
+                </div>
+      <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        
+            </div>
+            <div class="range-controls">
+                <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+              
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+      
+        </div>
+      </div>
+
+      </form>
+      </div>
+   
+      <div class="filter-results container">
+        <p class="results-number">НАЙДЕНО: 3</p>
+        <p class="results-sorting sorting">СОРТИРОВКА:</p>
+        <ul class="sort list-reset">
+          <li><button class="results-sorting button-sorting button-sorting-price button-sorting-active">ПО ЦЕНЕ</button></li>
+          <li><button class="results-sorting button-sorting button-sorting-type">ПО ТИПУ</button></li>
+          <li><button class="results-sorting button-sorting button-sorting-rating">ПО РЕЙТИНГУ</button></li>
+        </ul>
+        <p><button class="results-up button-results" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+      </svg>
+       </button></p>
+        <p><button class="results-down button-results button-results-active" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+      </svg>
+       </button></p>
+      </div>  
+    <div class="container">
     <h1 class="visually-hidden">Гостиницы</h1>
     
     <section class="hotels">
@@ -47,7 +126,7 @@
                     </div>
                     <div class="hotels-list-name">
                      <div class="hotel-name">
-                      <h2>AMARA RESORT & SPA</h2>
+                      <h2><a class="hotel-name-link" href="#">AMARA RESORT & SPA</a></h2>
                     </div>
                     <div class="columns">
                       <div class="item-left">
@@ -80,7 +159,7 @@
                       </div>
                     <div class="hotels-list-name">
                       <div class="hotel-name">
-                    <h2>DESERT QUAIL INN</h2>
+                    <h2><a class="hotel-name-link" href="#">DESERT QUAIL INN</a></h2>
                       </div>
                       <div class="columns">
                           <div class="item-left">
@@ -113,7 +192,7 @@
                       </div>
                   <div class="hotels-list-name">
                     <div class="hotel-name">
-                    <h2>VILLAS AT POCO DIABLO</h2>
+                    <h2><a class="hotel-name-link" href="#">VILLAS AT POCO DIABLO</a></h2>
                     </div>
                     <div class="columns">
                         <div class="item-left">
@@ -137,14 +216,14 @@
             
         </ul>
     </section>
-    <!--</div>-->
+  </div>
   </main> 
   <footer class="main-footer">
-     <div class=container>
-       <div>
+     
+       <div class="footer-block">
       <a class="hashtag" href="#">#VISITSEDONA</a>
        </div>
-    <div class="footer-social">
+    <div class="footer-social footer-block">
         <ul class="list-reset social-button-wrapper">
             <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
@@ -158,7 +237,7 @@
                 <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a></li>
            </ul>
     </div>
-     <div class="footer-copyright-wrapper">
+     <div class="footer-copyright-wrapper footer-block">
         <p class="footer-copyright">
           <div class="website">
           WEBSITE BY
@@ -171,7 +250,8 @@
          </div>
         
      </div>
-    </div>
+    
   </footer>  
+</div>
   </body>
 </html>
