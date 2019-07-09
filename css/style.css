@@ -73,8 +73,6 @@ input[type="radio"].visually-hidden {
 
 .modal-search {
     margin: 0 auto;
-    -webkit-box-shadow: inset 0 0 0 10px rgb(252, 5, 17);
-    box-shadow: inset 0 0 0 10px rgb(252, 5, 17);
 }
 
 .button-search {
@@ -153,6 +151,8 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .list-reset {
@@ -319,8 +319,8 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-search-form {
-    /*left: 50%;
-    transform: translateX(-50%);*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
     margin: 0 auto;
     width: 458px;
     padding: 55px;
@@ -337,6 +337,11 @@ input[type="radio"].visually-hidden {
     display: block;
     -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
+}
+
+.modal-error {
+    -webkit-animation: shake 0.6s;
+    animation: shake 0.6s;
 }
 
 .form-input-date {
@@ -983,7 +988,7 @@ input[type="radio"].visually-hidden {
 .reasons-to-visit-list {
     padding: 0;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 51px;
 }
 
 .reason-picture-description {
@@ -1088,10 +1093,10 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-one-header {
-    margin-top: 46px;
+    margin-top: 47px;
     margin-right: 65px;
     margin-left: 65px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .reason-one p {
@@ -1105,7 +1110,7 @@ input[type="radio"].visually-hidden {
 
 .reason-two-header {
     margin-top: 47px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 .reason-two p {
@@ -1411,6 +1416,10 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/checkbox-off-disabled.svg");
 }
 
+.filter-input-checkbox:focus+label::before {
+    outline: rgb(26, 12, 214) auto;
+}
+
 .filter-infrustructure {
     padding-bottom: 0;
     margin-left: 73px;
@@ -1581,5 +1590,51 @@ input[type="radio"].visually-hidden {
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
     }
 }
